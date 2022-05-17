@@ -14,3 +14,6 @@ bikeshare.py
 
 ### Credits
 Udacity
+
+### Author
+Eugene Chung
