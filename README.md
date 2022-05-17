@@ -3,10 +3,10 @@
 May 17, 2022
 
 ### Project Title
-Bikeshare
+US Bikeshare Data
 
 ### Description
-Exploring US Bikeshare Data of three major cities
+Exploring US Bikeshare Data of three major cities according to .csv files
 
 ### Files used
 *.csv
