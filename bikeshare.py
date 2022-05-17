@@ -184,6 +184,19 @@ def user_stats(df):
     print('-'*40)
 
 
+def display_raw_data(df):
+  """Displays raw data on user request.
+  """
+  print(df.head())
+  next = 0
+  while True:
+    view_raw_data = input('Would you like to view next five row of raw data? Enter yes or no.\n')
+    if view_raw_data.lower() != 'yes':
+      return
+    next = next + 5
+    print(df.iloc[next:next+5])
+
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -193,7 +206,13 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-
+        while True:
+            view_raw_data = input('Would you like to view first five row of raw data? Enter yes or no.\n')
+            if view_raw_data.lower() != 'yes':
+                break
+            display_raw_data(df)
+            break
+        
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
@@ -201,3 +220,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
+  
