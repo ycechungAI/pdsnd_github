@@ -1,3 +1,5 @@
+### Author
+Eugene Chung
 
 ### Date created
 May 17, 2022
@@ -14,6 +16,3 @@ bikeshare.py
 
 ### Credits
 Udacity
-
-### Author
-Eugene Chung
